@@ -41,7 +41,7 @@ def start_game():
        try:
            guess = input("Choose a number between 1 and 10: ")
            guess = int(guess)
-           while guess > 10 or guess < 1:
+           if guess > 10 or guess < 1:
                print("Please pick a number between 1 and 10")
                continue
        except ValueError:
